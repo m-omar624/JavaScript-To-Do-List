@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop App</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>TODO LIST</h1>
+        <form id="new-task-form">
+            <input 
+                type="text"
+                name="new-task-input"
+                id="new-task-input"
+                placeholder="New Task"/>
+            
+                <button type="submit"
+                id="new-task-submit">Add Task</button>
+            </form>
+        <input 
+            type="text"
+            name="due-day"
+            id="new-task-input-day"
+            placeholder="Days">
+            <input 
+            type="text"
+            name="due-time"
+            id="new-task-input-hour"
+            placeholder="Hours">   
+                
+
+    </header>
+    <main>
+        <section class="sorting">
+            <h3>Sort</h3>
+            <div id="sorting-buttons">
+                <button>Priority</button>
+                <button id="timeSort">Time Left</button>
+                <button>Date Added</button>
+            </div>
+        </section>
+
+        <section class="task-list">
+            <h2>Tasks</h2>
+            <div id="task">
+                <!-- <div class="content">
+                    <div class="content-box">
+                    <input 
+                        type="text"
+                        class="text"
+                        value="temporary task"
+                        readonly>
+                   <div class="time">
+                    <h3>time</h3>
+                   </div>
+                </div>
+                   <div>
+                    <select name="Priority" id="Priority">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                   </div>
+                
+                    <div class="actions">
+                        <button class="edit">Edit</button><button class="delete">Delete</button>
+                    </div>
+                </div>
+                    <div class="content">
+                    <div class="content-box">
+                    <input 
+                        type="text"
+                        class="text"
+                        value="temporary task"
+                        readonly>
+                   <div class="time">
+                    <h3>time</h3>
+                   </div>
+                </div>
+                   <div>
+                    <select name="Priority" id="Priority">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                   </div>
+                
+                    <div class="actions">
+                        <button class="edit">Edit</button><button class="delete">Delete</button>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

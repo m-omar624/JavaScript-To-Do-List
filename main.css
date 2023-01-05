@@ -1,0 +1,230 @@
+:root{
+    --background: #476179;
+    --background2: #02325E;
+    --input: #112C45;
+    --lightBlue: #34C8F0;
+    --midBlue: #288FCF;
+    --darkblue: #13338A;
+}
+
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Fira sans", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #FFF;
+    background-image: linear-gradient(to top, var(--background), var(--background2));
+
+}
+header{
+    padding: 1rem 1rem;
+    width: 100%;
+    margin: 0 auto;
+}
+header h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--lightBlue);
+    margin-bottom: 1rem;
+}
+
+#new-task-form{
+    display: flex;
+}
+
+input,button{
+    appearance: none;
+    border: none;
+    outline: none;
+}
+#new-task-input{
+    flex: 1,1,0%;
+    background-color: var(--input);
+    width: 35rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: white;
+    font-size: 1.25rem;
+    transition: 0.4s;
+}
+#new-task-input:hover{
+    background-color: var(--background2);
+    -webkit-box-shadow:0 0 10px white; 
+    -moz-box-shadow: 0 0 5px white; 
+    box-shadow:0 0 5px white;
+    transition: 0.2s;
+}
+#new-task-input::placeholder{
+    color: var(--background);
+}
+#new-task-submit{
+    padding: 10px 15px;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--lightBlue), var(--midBlue));
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#new-task-submit:hover{
+    padding: 10px 25px;
+    transition: 0.5s;
+
+}
+.sorting{
+    color: var(--lightBlue);
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+#sorting-buttons button{
+    background: none;
+    font-family: "Fira sans", sans-serif;
+    font-size: larger;
+    font-weight: 700;
+    margin-left: 2rem;
+    color: lightgray;
+    transition: 0.2s;
+}
+#sorting-buttons button:hover{
+    color: white;
+    transition: 0.1s;
+    text-shadow:
+    0 0px 2px #fff;
+    cursor: pointer;
+    
+    
+}
+.task-list{
+    padding:1rem;
+}
+#task .content .content-box{
+    display: flex;
+    justify-content: space-between;
+    flex: 1,1,0%;
+    background-color: var(--input);
+    width: 30rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    margin-right: 0.2rem;
+    color: white;
+    font-size: 1.25rem;
+    transition: 1s;
+    
+    
+}
+#task .content .content-box:hover{
+    background-color: var(--background2);
+    -webkit-box-shadow:0 0 10px white; 
+    -moz-box-shadow: 0 0 5px white; 
+    box-shadow:0 0 5px white;
+    transition: 0.2s;
+    
+    
+}
+#task .content .content-box:hover .time{
+    color: white;
+    transition: 0.2s;
+    text-shadow:
+    0 0px 2px #fff;
+}
+#task .content .content-box input{
+    background: none;
+    padding: 1rem;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+}
+.time{
+    color: var(--background);
+    padding: .7rem;
+    width: 13rem;
+    transition: 3s;
+    cursor:default;
+    
+}
+#task .content{
+    display: flex;
+    margin-bottom: .3rem;
+}
+.content select{
+    background-color: var(--input);
+    width: 3rem;
+    height: 3rem;
+    border-radius: .3rem;
+    margin-right: 0.2rem;
+    color: white;
+    font-size: 1.25rem;
+    transition: 0.4s;
+}
+.actions button{
+    background-color: var(--input);
+    width: 5rem;
+    height: 3rem;
+    border-radius: .3rem;
+    margin-right: 0.2rem;
+    color: var(--background);
+    font-size: 1rem;
+    transition: 1s;
+}
+.actions button:hover{
+    background-color: var(--background2);
+    color: white;
+    -webkit-box-shadow:0 0 10px white; 
+    -moz-box-shadow: 0 0 5px white; 
+    box-shadow:0 0 5px white;
+    transition: 0.2s;
+    text-shadow:
+    0 0px 2px #fff;
+    cursor: pointer;
+}
+#new-task-input-day{
+    flex: 1,1,0%;
+    background-color: var(--input);
+    width: 17.4rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: .1rem;
+    margin-top: 0.5rem;
+    color: white;
+    font-size: 1.25rem;
+    transition: 0.4s;
+}
+#new-task-input-day:hover{
+    background-color: var(--background2);
+    -webkit-box-shadow:0 0 10px white; 
+    -moz-box-shadow: 0 0 5px white; 
+    box-shadow:0 0 5px white;
+    transition: 0.2s;
+}
+#new-task-input-day::placeholder{
+    color: var(--background);
+}
+#new-task-input-hour{
+    flex: 1,1,0%;
+    background-color: var(--input);
+    width: 17.4rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: .1rem;
+    margin-top: 0.5rem;
+    color: white;
+    font-size: 1.25rem;
+    transition: 0.4s;
+}
+#new-task-input-hour:hover{
+    background-color: var(--background2);
+    -webkit-box-shadow:0 0 10px white; 
+    -moz-box-shadow: 0 0 5px white; 
+    box-shadow:0 0 5px white;
+    transition: 0.2s;
+}
+#new-task-input-hour::placeholder{
+    color: var(--background);
+}
